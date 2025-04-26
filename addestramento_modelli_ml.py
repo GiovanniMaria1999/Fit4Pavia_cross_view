@@ -122,7 +122,7 @@ class Addestra_modello_ML:
 
     def modello_ADABOOST(self):
 
-        parametri = [DecisionTreeClassifier(max_depth = 1),100,1]
+        parametri = [DecisionTreeClassifier(max_depth = 1),200,1]
         ab_pipeline = Pipeline([('scaler',StandardScaler()),('ab', AdaBoostClassifier(estimator=parametri[0],n_estimators=parametri[1],learning_rate=parametri[2], algorithm="SAMME"))])
         ab_pipeline.fit(self.xtrain, self.ytrain)
         predizioni = ab_pipeline.predict(self.xtest)
