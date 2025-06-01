@@ -188,8 +188,8 @@ for i in range(100):
     dim_train_sim.append(dim_train)
     dim_test_sim.append(dim_test)
 
-    etichetta_is_sub.append(etichetta_is_sub)
-    etichetta_is_sett.append(etichetta_is_sett)
+    etichetta_is_sub_tot.append(etichetta_is_sub)
+    etichetta_is_sett_tot.append(etichetta_is_sett)
     etichetta_is_tot_train.append(paz_train)
     etichetta_is_tot_test.append(paz_test)
     lista_nomi_sim.append(lista_nomi)
@@ -326,7 +326,7 @@ for i in range(100):
     class CONV1D(nn.Module):
         def __init__(self, in_channels, out_channels, in_features, num_classes):  # definisco il costruttore di CONV1D
             super(CONV1D, self).__init__()  # serve per chiamare il costruttore della classe base(nn.Module) dalla
-            # classe personalizzata. E' un metodo per inizializzare correttamente un classe derivata in Python, in particolare
+            # classe personalizzata. E' un metodo per inizializzare correttamente una classe derivata in Python, in particolare
             # quando eredito da classi che fanno parte di librerie esterne; serve per inizializzare il costruttore nn.Module.
 
             self.conv1 = nn.Conv1d(in_channels=in_channels, out_channels=out_channels, kernel_size=3, padding=1)

@@ -184,8 +184,8 @@ for i in range(100):
     dim_train_sim.append(dim_train)
     dim_test_sim.append(dim_test)
 
-    etichetta_is_sub.append(etichetta_is_sub)
-    etichetta_is_sett.append(etichetta_is_sett)
+    etichetta_is_sub_tot.append(etichetta_is_sub)
+    etichetta_is_sett_tot.append(etichetta_is_sett)
     etichetta_is_tot_train.append(paz_train)
     etichetta_is_tot_test.append(paz_test)
     lista_nomi_sim.append(lista_nomi)
